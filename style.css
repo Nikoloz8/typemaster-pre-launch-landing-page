@@ -217,6 +217,14 @@ footer {
     color: #7B8BAD;
 }
 
+.logo-button:hover{
+    background-color: #162542;
+    color: #FFFFFF;
+}
+.button-release button:hover{
+    background-color: #FF9B62;
+}
+
 @media screen and (max-width: 1200px) {
     .button-release {
         justify-content: space-between;
