@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Barlow;
+}
+
+body {
+    padding: 50px 0 50px 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1110px;
+}
+
+.logo-button button {
+    width: 175px;
+    height: 58px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 8px;
+    background-color: #E8EFF2;
+    color: #162542;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+.logo-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.keyboard-part1 {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.keyboard-part1 .img {
+    width: 540px;
+    height: 480px;
+    border-radius: 1rem;
+    background-image: url(./images/desktop/image-keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.keyboard-text1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 40%;
+}
+
+.keyboard-text1 h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #162542;
+    line-height: 3.5rem;
+}
+
+.keyboard-text1 p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #7B8BAD;
+}
+
+.keyboard-text1 h4,
+.keyboard-text1 button {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #7B8BAD;
+    font-weight: 700;
+}
+
+.keyboard-text1 button {
+    width: 175px;
+    height: 58px;
+    border-radius: 8px;
+    background-color: #F16718;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.button-release {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.keyboard-part1 .img::after,
+.keyboard-part2 .img::after {
+    /* ფოტო რომ მაქვს გვიან დავინახე  */
+    content: "";
+    display: block;
+    position: relative;
+    left: 565px;
+    width: 255px;
+    height: 240px;
+    background-color: #E8EFF2;
+    border-radius: 20px;
+}
+
+
+.keyboard-part2 .img {
+    background: linear-gradient(rgba(241, 103, 24, 0.6)), url(./images/desktop/image-phone-and-keyboard.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 255px;
+    border-radius: 20px;
+}
+
+.keyboard-part2 .img::after {
+    left: -279px;
+    top: 240px;
+}
+
+
+.keyboard-part2 .img2 {
+    width: 445px;
+    border-radius: 20px;
+    background-image: url("./images/desktop/image-glass-and-keyboard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.keyboard-part2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    height: 480px;
+    margin-top: 25px;
+}
+
+.keyboard-text2 {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.keyboard-text2 h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 900;
+    color: #162542;
+}
+
+.keyboard-text2 p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #7B8BAD;
+    font-weight: 500;
+}
+
+.keyboard-part2-images {
+    display: flex;
+    gap: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F16718;
+    border-radius: 16px;
+}
+
+.footer-part {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 255px;
+}
+
+.footer-part h3 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    font-weight: 900;
+    color: #162542;
+    width: 70%;
+}
+
+.footer-part p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #7B8BAD;
+}
+
+@media screen and (max-width: 1200px) {
+    .button-release {
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
+
+    .keyboard-part1 .img {
+        position: relative;
+        left: 170px;
+        background-image: url(./images/tablet/image-keyboard.jpg);
+    }
+
+    .keyboard-part1 .img::after {
+        display: none;
+    }
+
+    .img2 {
+        background-image: url(./images/tablet/image-glass-and-keyboard.jpg) !important;
+        width: 100% !important;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 50px 0 50px;
+    }
+
+    .keyboard-part2-images {
+        justify-content: space-between;
+        gap: 30px;
+        height: 320px;
+
+    }
+
+    .keyboard-part2 {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .keyboard-text2 {
+        flex-direction: row;
+        gap: 50px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .keyboard-part2 .img {
+        background: linear-gradient(rgba(241, 103, 24, 0.6)), url(./images/tablet/image-phone-and-keyboard.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 214px;
+        border-radius: 20px;
+    }
+
+    .keyboard-part2 .img::after {
+        display: none;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        margin-top: 150px;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .keyboard-text1 p {
+        font-size: 1rem;
+    }
+
+    .keyboard-text1 h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .keyboard-part1 {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .keyboard-part1 div {
+        width: 100%;
+    }
+
+    .keyboard-part1 .img {
+        width: 100%;
+        left: 30px;
+    }
+
+    .keyboard-text2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-part {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 20px 0 20px;
+    }
+
+    .keyboard-part2-images {
+        position: relative;
+        right: 35px;
+    }
+
+    .keyboard-part1 .img{
+        background-image: url(./images/mobile/image-keyboard.jpg);
+    }
+
+    .keyboard-part2-images .img{
+        background: linear-gradient(rgba(241, 103, 24, 0.6)), url(./images/mobile/image-phone-and-keyboard.jpg);
+    }
+    
+    
+    .keyboard-part2-images .img2{
+        background-image: url(./images/mobile/image-glass-and-keyboard.jpg) !important;
+    }
+}
